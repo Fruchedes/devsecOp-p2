@@ -60,7 +60,7 @@ pipeline{
                    withDockerRegistry(credentialsId: 'DockerHub-Credential', toolName: 'Docker'){
                        sh "docker build -t reddit ."
                        sh "docker tag reddit fruchedes/reddit:latest "
-                       sh "docker push awanmbandi/reddit:latest "
+                       sh "docker push fuchedes/reddit:latest "
                     }
                 }
             }
